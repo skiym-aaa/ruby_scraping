@@ -1,0 +1,7 @@
+require 'net/http'
+
+# 対象サイトのURLを指定してHTMLを取得し標準出力に表示します
+url = 'https://masayuki14.github.io/pit-news/'
+url = URI(url)
+html = Net::HTTP.get(uri)
+puts html
